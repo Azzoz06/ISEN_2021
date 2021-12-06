@@ -2,8 +2,8 @@
 
 ## Hands-On Labs
 + Lab 1: Getting Started [here](Lab1-GettingStarted/Lab1-GettingStarted.md)
-+ Lab 2: Data Visualization [here](Lab2-Visualizations/Lab2-Visualization.md)
-+ Lab 3: Modeler Flow
++ Lab 2: Data Visualization using embedded Dashboard [here](Lab2-Visualizations/Lab2-Visualization.md)
++ Lab 3: Modeler Flow on a Time Series data set [here](Lab5-TimeSeries/Lab5_StreamingTimeSeries.md)
 
 
 
