@@ -61,11 +61,13 @@ From previous learning try to plot at least one image from MNIST Dataset
 
 <details><summary>Click for a valid answer</summary>
 <p>
-``` python
+
+``` python  
 from matplotlib import pyplot as plt
 img = plt.imshow(X_train[0])
 plt.show()
-```
+```  
+
 You should see the following sample image :
 ![alt text](images/SampleDigit.png "IBM WS")
 </p>
@@ -105,10 +107,11 @@ The Sequential model is widely used. It allows you to easily stack sequential la
 model = Sequential()
 ```
 
-Single convulational model wih 1 layer 
+Single convolutional model with 1 layer
 
 <details><summary>Click for a 1 layer CNN (Baseline Error: 1.19% & 30s per epoch)</summary>
-<p>
+<p>  
+
 ``` python
 model.add(Conv2D(32, kernel_size=(3,3), activation='relu', input_shape=input_shape))
 model.add(MaxPool2D(pool_size=(2,2)))
@@ -121,7 +124,8 @@ model.add(Dense(10, activation='softmax'))
 </details>
 
 <details><summary>Click for a 3 layers CNN (Baseline Error: 0.74% & 150s per epoch)</summary>
-<p>
+<p>  
+
 ``` python
 model.add(Conv2D(32, kernel_size=(3,3),activation='relu',input_shape=input_shape))
 model.add(Conv2D(32, kernel_size=(3,3), activation='relu'))
@@ -136,11 +140,14 @@ model.add(Activation('softmax'))
 
 </p>
 </details>
+<br>
+
+
 
 **Conv2D**
-It is a 2D convolutional layer that we use to process the 2D MNIST input images. The first argument passed to the Conv2D() layer function is the number of output channels – in this case we have 32 output channels. 
+It is a 2D convolutional layer that we use to process the 2D MNIST input images. The first argument passed to the Conv2D() layer function is the number of output channels – in this case we have 32 output channels.
 The next input is the kernel_size, which in this case we have chosen to be a 3×3 moving window, next, the activation function is a rectified linear unit and finally we have to supply the model with the size of the input to the layer (which is declared in another part of the code.
-Declaring the input shape is only required of the first layer. 
+Declaring the input shape is only required of the first layer.
 Keras is good enough to work out the size of the tensors flowing through the model from there.
 
  * **MaxPool2D** (Reduction matrix)
@@ -177,7 +184,7 @@ from matplotlib import pyplot as plot
 
 prev = model.predict(X_test[:len(X_test)])
 
-# restore initial structure for image rendering 
+# restore initial structure for image rendering
 X_test = X_test.reshape(X_test.shape[0], 28, 28)
 
 IND = 0
@@ -185,7 +192,7 @@ NbErrors = 0
 while IND < len(X_test):
     predt = np.argmax(prev[IND])
     real = np.argmax(Y_test[IND])
-    
+
     if (predt != real):
          print("MODEL mismatch ---> predicted : ",predt," to real :",real,"for Indice : ",IND)
          # Plotting first samples of MNIST
