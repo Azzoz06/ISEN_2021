@@ -41,7 +41,7 @@ Your grade will mostly rely on:
 +	The quality and effectiveness of analytical research
 +	The quality and effectiveness of your communication
 
-## Due Date: February, 28th 2021
+## Due Date: January 5th, 2022
 
 ---
 
