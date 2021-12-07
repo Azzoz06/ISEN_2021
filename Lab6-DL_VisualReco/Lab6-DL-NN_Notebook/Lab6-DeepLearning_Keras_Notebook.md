@@ -25,6 +25,8 @@ Start typing the following code into the first cell then click the run button to
 >>> print ("Numpy verion   :",numpy.__version__)
 >>> print ("Theano version :",theano.__version__)
 !pip install --upgrade dask
+!pip install --upgrade keras
+!pip install --upgrade theano
 ```
 You should get something like :
 ![alt text](images/Notebook2.png "IBM WS")
@@ -34,14 +36,15 @@ Dask Library uses existing Python APIs and data structures to make it easy to sw
 Now import required libraries as follow
 ``` python
 import numpy as np
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Flatten
-from keras.layers import Conv2D, MaxPool2D
-from keras.optimizers import RMSprop
-from keras.utils import np_utils
-from keras import backend as kr
+from tensorflow import keras
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten
+from tensorflow.keras.layers import Conv2D, MaxPool2D
+from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras import utils
+from tensorflow.keras import backend as kr
 
-from keras.datasets import mnist
+from tensorflow.keras.datasets import mnist
 
 np.random.seed(99)  # for reproducibility
 ```
@@ -92,8 +95,8 @@ You should get :
 
 Now let's convert 1-dimensional class (label are the direct value of the digit) while we want to have a arrays to 10-dimensional class matrices.
 ``` python
-Y_train = np_utils.to_categorical(y_train,10)
-Y_test = np_utils.to_categorical(y_test,10)
+Y_train = utils.to_categorical(y_train,10)
+Y_test = utils.to_categorical(y_test,10)
 print (Y_train[0])
 ```
 As output you should get :
