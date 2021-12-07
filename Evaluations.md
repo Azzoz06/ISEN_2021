@@ -45,6 +45,13 @@ Your grade will mostly rely on:
 
 ---
 
+## Datasets repositories  
+
++ [UCI Machine Learning datasets](https://archive.ics.uci.edu/ml/datasets.php)
++ [Google Dataset search](https://datasetsearch.research.google.com/)
++ [IBM Cloud Pak for Data dataset Gallery](https://dataplatform.cloud.ibm.com/gallery?context=cpdaas&format=dataset)
+
+
 ## Example of Subjects
 
 ### What makes a blockbuster?
