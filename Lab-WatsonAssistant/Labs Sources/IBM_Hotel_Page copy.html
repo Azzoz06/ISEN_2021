@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acme Hotel - powered by Watson AI</title>
+    <img src = "https://www.ibmlearningcenter.com/wp-content/uploads/2018/02/Contact-Us-1024x576.jpg"
+    	width="100%" height="auto"
+         alt = "Acme Hotel" />
+
+         <script>
+           window.watsonAssistantChatOptions = {
+               integrationID: "891f557d-0b0d-4e67-aa7f-c36b3b23aac6", // The ID of this integration.
+               region: "eu-de", // The region your integration is hosted in.
+               serviceInstanceID: "851a4048-02e9-481e-b8e7-82464c6e0a9b", // The ID of your service instance.
+               onLoad: function(instance) { instance.render(); }
+             };
+           setTimeout(function(){
+             const t=document.createElement('script');
+             t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+             document.head.appendChild(t);
+           });
+         </script>
+
+</head>
+
+<body>
+<body style="background-color:#eeeeee">
+</body>
+
+</html>
