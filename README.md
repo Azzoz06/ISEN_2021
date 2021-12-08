@@ -5,6 +5,7 @@
 + Lab 2: Data Visualization using embedded Dashboard [here](Lab2-Visualizations/Lab2-Visualization.md)
 + Lab 3: Modeler Flow on a Time Series data set [here](Lab5-TimeSeries/Lab5_StreamingTimeSeries.md)
 + Lab 4: Neural Network to recognize Handwritten digits [here](Lab6-DL_VisualReco/Lab6-DL-NN_Notebook/Lab6-DeepLearning_Keras_Notebook.md)
++ Lab 5: Build a Sentiment Analysis model [here](Lab-NLP/Sentiment-Analysis.ipynb)
 + Lab 5: Build a Chatbot using Python [here](Lab-NLP/Building a ChatBot with Python.ipynb)
 + Lab 6: Build a Chatbot using **IBM Watson Assistant**
 
